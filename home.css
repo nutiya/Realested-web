@@ -12,6 +12,9 @@ body{
 .font12{
     font-size: 14px;
 }
+.font13{
+    font-size: 13px;
+}
 .center{
     display: flex;
     align-items: center;
@@ -80,6 +83,28 @@ body{
     background-color: #8DCA3F;
     font-size: 20px;
     color: white;
+}
+.topp-menu:hover .topp-dropdown{
+    display: block;
+}
+.topp-dropdown{
+    z-index: 1;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color:#8DCA3F;
+    top: 0px;
+    display: none;
+    right: 50px;
+}
+.topp-dropdown li{
+    width: 160px;
+    padding: 5px;
+    list-style: none; 
+}
+.topp-dropdown li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 
@@ -334,12 +359,17 @@ body{
     width:1250px ;
 }
 .pop-locate{
+    gap: 0.8rem;
     height: 234px;
+}
+.shadoww{
+    transition: all 0.5s ease;
 }
 .shadoww:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .box-mainn{
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -348,12 +378,19 @@ body{
     height: 100%;
     min-width: 234px;
 }
+.box-mainn:hover img{
+    transform: scale(1.1);
+}
 .box-main{
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 237px;
     background-color: whitesmoke;
 }
 .box-mainn img{
+    z-index: -1;
+    transition: all 0.5s;
     height: 234px;
     width:234px;
 }
@@ -376,4 +413,171 @@ body{
     width: 100%;
     font-size:13px ;
     font-weight: 500;
+}
+.box-main-img{
+    width: 100%;
+    background-color: black;
+    height: 160px;
+}
+.box-main-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box-main-text{
+    font-size: 12px;
+    color: black;
+}
+.feetback-card{
+    gap: 0.8rem;
+    height: 320px;
+}
+.profile-pic{
+    overflow: hidden;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: rgb(184, 184, 184);
+}
+.profile-pic img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.profile-name{
+    color: black;
+    font-weight: 500;
+}
+.text-feedback{
+    width: 100%;
+    height: 150px;
+}
+.text-feedback span{
+    font-size: 12px;
+    font-weight: 500;
+}
+.shaadow{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.row-box{
+    display: flex;
+    height: 120px;
+    width: 600px;
+}
+.pop-locatee{
+    gap: 0.8rem;
+}
+.row-box-pic{
+    height: 100%;
+    width: 180px;
+    background-color: #c7c6c6;
+}
+
+
+
+.border-footer{
+    border-bottom: 1px gray solid;
+}
+.footer-bg{
+    background-color: #2F3239;
+}
+.bg-footer{
+    background-color: #EBEBEB;
+}
+.footer{
+    width:1150px;
+}
+.btn-footer::before{
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom:0px;
+    display: none;
+    height: 4px;
+    width: 100%;
+    background-color: #8DCA3F;
+}
+.btn-footer:hover::before{
+    display: block;
+}
+.footer-menu{
+    background-color: #EBEBEB;
+    display: flex;
+    left: 10px;
+    top: 57px;
+    width: 1130px;
+}
+.menu-footer-list{
+    background-color: #EBEBEB;
+    display: block;
+    left: 10px;
+    top: 57px;
+    width: 1110px;
+}
+.font-footer-list{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.menu-footer-list1{
+    background-color: #EBEBEB;
+    display: none;
+    left: -114px;
+    top: 57px;
+    width: 1110px;
+}
+.btn-footerr1:hover .menu-footer-list1{
+    display: block;
+}
+
+.menu-footer-list2{
+    background-color: #EBEBEB;
+    display: none;
+    left: -265px;
+    top: 57px;
+    width: 1110px;
+}
+.btn-footerr2:hover .menu-footer-list2{
+    display: block;
+}
+
+.menu-footer-list3{
+    background-color: #EBEBEB;
+    display: none;
+    left: -395px;
+    top: 57px;
+    width: 1110px;
+}
+.btn-footerr3:hover .menu-footer-list3{
+    display: block;
+}
+
+.menu-footer-list4{
+    background-color: #EBEBEB;
+    display: none;
+    left: -490px;
+    top: 57px;
+    width: 1110px;
+}
+.btn-footerr4:hover .menu-footer-list4{
+    display: block;
+}
+.first-btn{
+    display: block;
+}
+.second-btn{
+    top: 0px;
+    display: none;
+    left: -182px;
+}
+.btn2:hover .second-btn{
+    display: block;
+}
+
+.footer-img{
+    height: 160px;
+    width: 1150px;
+}
+.f-img{
+    height: 45px;
 }
